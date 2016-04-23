@@ -1,0 +1,334 @@
+[
+    {
+        "model": "estore.customer",
+        "pk": 1,
+        "fields": {
+            "name": "John Smith",
+            "email": "john@example.com",
+            "password": "***",
+            "country": "USA",
+            "address": "address 1"
+        }
+    },
+    {
+        "model": "estore.customer",
+        "pk": 2,
+        "fields": {
+            "name": "Matthew Reed",
+            "email": "matthew@example.com",
+            "password": "***",
+            "country": "USA",
+            "address": "address 2"
+        }
+    },
+    {
+        "model": "estore.customer",
+        "pk": 3,
+        "fields": {
+            "name": "Chuan Qin",
+            "email": "chuanqin@example.com",
+            "password": "***",
+            "country": "China",
+            "address": "address 3"
+        }
+    },
+    {
+        "model": "estore.customer",
+        "pk": 4,
+        "fields": {
+            "name": "Rebecca Lawson",
+            "email": "rebecca@example.com",
+            "password": "***",
+            "country": "USA",
+            "address": "address 4"
+        }
+    },
+    {
+        "model": "estore.customer",
+        "pk": 5,
+        "fields": {
+            "name": "Oliver Blakey",
+            "email": "oliver@example.com",
+            "password": "***",
+            "country": "UK",
+            "address": "address 5"
+        }
+    },
+    {
+        "model": "estore.category",
+        "pk": 1,
+        "fields": {
+            "name": "Tablets"
+        }
+    },
+    {
+        "model": "estore.category",
+        "pk": 2,
+        "fields": {
+            "name": "USB Flash Drives"
+        }
+    },
+    {
+        "model": "estore.category",
+        "pk": 3,
+        "fields": {
+            "name": "Solid State Drives"
+        }
+    },
+    {
+        "model": "estore.category",
+        "pk": 4,
+        "fields": {
+            "name": "Data Storage"
+        }
+    },
+    {
+        "model": "estore.product",
+        "pk": 1,
+        "fields": {
+            "name": "Kindle Fire HD",
+            "description": "Amazon tablet for web, movies, music, apps, games, reading and more",
+            "picture": "",
+            "price": "284.00",
+            "quantity": 120,
+            "categories": [1]
+        }
+    },
+    {
+        "model": "estore.product",
+        "pk": 2,
+        "fields": {
+            "name": "Apple iPad with Retina Display MD513LL/A (16GB, Wi-Fi, White)",
+            "description": "iPad with Retina display now features an A6X chip, FaceTime HD camera, and faster Wi-Fi",
+            "picture": "",
+            "price": "478.50",
+            "quantity": 180,
+            "categories": [1]
+        }
+    },
+    {
+        "model": "estore.product",
+        "pk": 3,
+        "fields": {
+            "name": "SanDisk Cruzer 16 GB USB Flash Drive",
+            "description": "Take it all with you on reliable SanDisk USB flash drive",
+            "picture": "",
+            "price": "9.99",
+            "quantity": 400,
+            "categories": [2, 4]
+        }
+    },
+    {
+        "model": "estore.product",
+        "pk": 4,
+        "fields": {
+            "name": "Kingston Digital DataTraveler SE9 16GB USB 2.0",
+            "description": "Convenient - small, capless and pocket-sized for easy transportability",
+            "picture": "",
+            "price": "9.98",
+            "quantity": 350,
+            "categories": [2, 4]
+        }
+    },
+    {
+        "model": "estore.product",
+        "pk": 5,
+        "fields": {
+            "name": "Samsung 840 Series 2.5 inch 120GB SATA III SSD",
+            "description": "Enables you to boot up your computer in as little as 15 seconds",
+            "picture": "",
+            "price": "98.95",
+            "quantity": 0,
+            "categories": [3, 4]
+        }
+    },
+    {
+        "model": "estore.product",
+        "pk": 6,
+        "fields": {
+            "name": "Crucial m4 256GB 2.5-Inch SSD SATA 6Gb/s CT256M4SSD2",
+            "description": "The award-winning SSD delivers powerful performance gains for SATA 6Gb/s systems",
+            "picture": "",
+            "price": "188.67",
+            "quantity": 60,
+            "categories": [3, 4]
+        }
+    },
+    {
+        "model": "estore.cartitem",
+        "pk": 1,
+        "fields": {
+            "quantity": 1,
+            "customer": 1,
+            "product": 1
+        }
+    },
+    {
+        "model": "estore.cartitem",
+        "pk": 2,
+        "fields": {
+            "quantity": 1,
+            "customer": 1,
+            "product": 2
+        }
+    },
+    {
+        "model": "estore.cartitem",
+        "pk": 3,
+        "fields": {
+            "quantity": 1,
+            "customer": 2,
+            "product": 5
+        }
+    },
+    {
+        "model": "estore.order",
+        "pk": 1,
+        "fields": {
+            "status": "DELIVERED",
+            "date_created": "2015-10-20",
+            "date_shipped": "2015-10-21",
+            "date_delivered": "2015-10-26",
+            "total_price": "292.00",
+            "customer": 1
+        }
+    },
+    {
+        "model": "estore.order",
+        "pk": 2,
+        "fields": {
+            "status": "DELIVERED",
+            "date_created": "2016-01-10",
+            "date_shipped": "2016-01-10",
+            "date_delivered": "2016-01-13",
+            "total_price": "478.50",
+            "customer": 1
+        }
+    },
+    {
+        "model": "estore.order",
+        "pk": 3,
+        "fields": {
+            "status": "DELIVERED",
+            "date_created": "2015-11-03",
+            "date_shipped": "2015-11-04",
+            "date_delivered": "2015-11-07",
+            "total_price": "680.50",
+            "customer": 2
+        }
+    },
+    {
+        "model": "estore.order",
+        "pk": 4,
+        "fields": {
+            "status": "SHIPPED",
+            "date_created": "2016-03-11",
+            "date_shipped": "2016-03-12",
+            "date_delivered": null,
+            "total_price": "99.80",
+            "customer": 3
+        }
+    },
+    {
+        "model": "estore.order",
+        "pk": 5,
+        "fields": {
+            "status": "CREATED",
+            "date_created": "2016-03-15",
+            "date_shipped": null,
+            "date_delivered": null,
+            "total_price": "722.00",
+            "customer": 4
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 1,
+        "fields": {
+            "quantity": 1,
+            "price": "274.00",
+            "order": 1,
+            "product": 1
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 2,
+        "fields": {
+            "quantity": 2,
+            "price": "9.98",
+            "order": 1,
+            "product": 4
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 3,
+        "fields": {
+            "quantity": 1,
+            "price": "478.50",
+            "order": 2,
+            "product": 2
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 4,
+        "fields": {
+            "quantity": 1,
+            "price": "478.50",
+            "order": 3,
+            "product": 2
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 5,
+        "fields": {
+            "quantity": 2,
+            "price": "9.98",
+            "order": 3,
+            "product": 4
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 6,
+        "fields": {
+            "quantity": 1,
+            "price": "199.00",
+            "order": 3,
+            "product": 6
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 7,
+        "fields": {
+            "quantity": 10,
+            "price": "9.98",
+            "order": 4,
+            "product": 4
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 8,
+        "fields": {
+            "quantity": 1,
+            "price": "284.00",
+            "order": 5,
+            "product": 1
+        }
+    },
+    {
+        "model": "estore.orderitem",
+        "pk": 9,
+        "fields": {
+            "quantity": 1,
+            "price": "478.50",
+            "order": 5,
+            "product": 2
+        }
+    }
+]
